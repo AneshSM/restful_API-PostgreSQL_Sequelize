@@ -5,11 +5,19 @@
     "module": "commonjs" /* Specify what module code is generated. */,
     "rootDir": ".",
     "outDir": "dist" /* Specify an output folder for all emitted files. */,
-    "lib": ["ESNext", "DOM"] /* Specifies the library files to be included in the compilation */,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ] /* Specifies the library files to be included in the compilation */,
     "removeComments": true /* Disable emitting comments. */,
     "allowJs": true,
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@routers/*": ["src/routes/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@db/*": ["src/db/*"],
+      "@models/*": ["src/db/models/*"],
+      "@services/*": ["src/services/*"]
     },
     "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
     "strict": true /* Enable all strict type-checking options. */,
